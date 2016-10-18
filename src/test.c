@@ -22,7 +22,7 @@ void permute_tests(int *array, int *testnum, int i,int length) {
   if (length == i){
     printf("\n\nTEST E%i: bst_to_array of size %i\nThe input order was: ", *testnum, length);
     print_arr(array, length);
-    printf("Expected output:\n", *testnum, length);
+    printf("Expected output:\n");
     int c;
     printf(" [");
     for(c = 0; c < length; c++)
@@ -313,13 +313,4 @@ int main(){
     printf("Program's output: %i\n", bst_num_leq(t, 15));
 
     bst_free(t);
-
-    /* int n = bst_num_geq(t, 4); */
-    /* printf("bst_num_geq(t, 4): %d\n", n); */
-    /* n = bst_num_leq(t, 8); */
-    /* printf("bst_num_leq(t, 8): %d\n", n); */
-    /* n = bst_num_geq(t, 7); */
-    /* printf("bst_num_geq(t, 7): %d\n", n); */
-    /* n = bst_num_leq(t, 10); */
-    /* printf("bst_num_leq(t, 10): %d\n", n); */
 }
